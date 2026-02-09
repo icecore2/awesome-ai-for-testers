@@ -306,7 +306,7 @@ function markdownToHTML(markdown) {
         .replace(/\n\n/g, '</p><p>')
         .replace(/^(.+)$/gim, '<p>$1</p>')
         .replace(/<p><h/g, '<h')
-        .replace(/<\/h[1-3]><\/p>/g, '</h1>')
+        .replace(/<\/h([1-3])><\/p>/g, '</h$1>')
         .replace(/<p><\/p>/g, '')
         .replace(/<p><ul>/g, '<ul>')
         .replace(/<\/ul><\/p>/g, '</ul>');
