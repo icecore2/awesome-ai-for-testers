@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome AI for Testers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🤖 Awesome AI for Testers</h1>
+        <p>A curated collection of AI-powered testing resources</p>
+    </header>
+
+    <div class="container">
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Search for topics, tools, or categories..." />
+        </div>
+
+        <div class="filter-section">
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+            </select>
+        </div>
+
+        <div id="categoriesContainer"></div>
+
+        <div class="pagination">
+            <button id="prevBtn" disabled>Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ for the Testing Community</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
